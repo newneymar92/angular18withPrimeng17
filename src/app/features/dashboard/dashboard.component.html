@@ -1,0 +1,94 @@
+<div class="grid">
+    <!-- Stats Cards -->
+    <div class="col-12 md:col-6 lg:col-3">
+        <p-card>
+            <div class="stat-card">
+                <div class="stat-card-value">$24,000</div>
+                <div class="stat-card-label">Total Sales</div>
+                <div class="stat-card-icon">
+                    <i class="pi pi-dollar"></i>
+                </div>
+            </div>
+        </p-card>
+    </div>
+    <div class="col-12 md:col-6 lg:col-3">
+        <p-card>
+            <div class="stat-card">
+                <div class="stat-card-value">1,200</div>
+                <div class="stat-card-label">New Users</div>
+                <div class="stat-card-icon">
+                    <i class="pi pi-users"></i>
+                </div>
+            </div>
+        </p-card>
+    </div>
+    <div class="col-12 md:col-6 lg:col-3">
+        <p-card>
+            <div class="stat-card">
+                <div class="stat-card-value">85%</div>
+                <div class="stat-card-label">Conversion Rate</div>
+                <div class="stat-card-icon">
+                    <i class="pi pi-chart-line"></i>
+                </div>
+            </div>
+        </p-card>
+    </div>
+    <div class="col-12 md:col-6 lg:col-3">
+        <p-card>
+            <div class="stat-card">
+                <div class="stat-card-value">12</div>
+                <div class="stat-card-label">Active Projects</div>
+                <div class="stat-card-icon">
+                    <i class="pi pi-folder"></i>
+                </div>
+            </div>
+        </p-card>
+    </div>
+
+    <!-- Sales Chart -->
+    <div class="col-12">
+        <p-card header="Sales Overview">
+            <p-chart type="line" [data]="salesData" [options]="salesOptions" height="300px"></p-chart>
+        </p-card>
+    </div>
+
+    <!-- Recent Activities -->
+    <div class="col-12 md:col-6">
+        <p-card header="Recent Activities">
+            <div class="activity-list">
+                <div class="activity-item">
+                    <i class="pi pi-user-plus activity-icon"></i>
+                    <div class="activity-content">
+                        <div class="activity-title">New User Registration</div>
+                        <div class="activity-time">2 minutes ago</div>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <i class="pi pi-shopping-cart activity-icon"></i>
+                    <div class="activity-content">
+                        <div class="activity-title">New Order Received</div>
+                        <div class="activity-time">1 hour ago</div>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <i class="pi pi-comment activity-icon"></i>
+                    <div class="activity-content">
+                        <div class="activity-title">New Comment</div>
+                        <div class="activity-time">3 hours ago</div>
+                    </div>
+                </div>
+            </div>
+        </p-card>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="col-12 md:col-6">
+        <p-card header="Quick Actions">
+            <div class="quick-actions">
+                <button pButton label="Add New User" icon="pi pi-user-plus" class="p-button-primary"></button>
+                <button pButton label="Create Report" icon="pi pi-file" class="p-button-secondary"></button>
+                <button pButton label="Send Message" icon="pi pi-envelope" class="p-button-info"></button>
+            </div>
+        </p-card>
+    </div>
+</div> 

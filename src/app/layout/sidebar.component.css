@@ -1,0 +1,59 @@
+.sidebar {
+  width: 260px;
+  background: var(--surface-card, #181c2f);
+  color: var(--text-color, #fff);
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+.menu {
+  list-style: none;
+  padding: 0;
+}
+.menu > li {
+  margin-bottom: 1.5rem;
+}
+.menu-group {
+  font-size: 0.85rem;
+  color: #a0a4b8;
+  margin-bottom: 0.5rem;
+  display: block;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.menu ul {
+  list-style: none;
+  padding-left: 1.5rem;
+}
+.menu ul li {
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #bfc4d0;
+  transition: background 0.2s, color 0.2s;
+}
+.menu ul li:hover, .menu li.active {
+  background: #2a3042;
+  color: #fff;
+}
+.menu > li > i, .menu ul li > i {
+  font-size: 1.1rem;
+}
+.event-badge {
+  background: #6c63ff;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0 0.5rem;
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+} 

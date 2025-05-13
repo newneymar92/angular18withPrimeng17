@@ -1,0 +1,86 @@
+.layout-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Topbar Styles */
+.topbar {
+    height: 60px;
+    background-color: var(--surface-card);
+    border-bottom: 1px solid var(--surface-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.topbar-right {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Sidebar Styles */
+:host ::ng-deep {
+    .p-sidebar {
+        padding: 0;
+    }
+}
+
+.sidebar-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--surface-border);
+}
+
+.sidebar-menu {
+    padding: 1rem 0;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: background-color 0.2s;
+    gap: 0.75rem;
+}
+
+.menu-item:hover {
+    background-color: var(--surface-hover);
+}
+
+.menu-item i {
+    font-size: 1.25rem;
+}
+
+/* Main Content Styles */
+.main-content {
+    flex: 1;
+    margin-top: 60px;
+    padding: 1.5rem;
+    background-color: var(--surface-ground);
+} 
